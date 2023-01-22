@@ -9,5 +9,8 @@
     <Import_RootNamespace>EntityModels</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)\Entities\*.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\OptionSets\*.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XrmServiceContext.cs" />   
   </ItemGroup>
 </Project>

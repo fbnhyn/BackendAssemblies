@@ -59,7 +59,7 @@
             /*
             Comma seperate list of entity logical names.
             */
-            "entities": "account,contact,quote,opportunity,systemuser",
+            "entities": "account,contact,quote,opportunity,systemuser,role",
             /*
             Comma seperated list of actions request/responses to generate - leave emtpty or ommit for none
             */

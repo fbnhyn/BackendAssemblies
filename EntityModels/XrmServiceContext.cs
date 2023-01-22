@@ -58,6 +58,17 @@ namespace EntityModels
 		}
 		
 		/// <summary>
+		/// Gets a binding to the set of all <see cref="EntityModels.Role"/> entities.
+		/// </summary>
+		public System.Linq.IQueryable<EntityModels.Role> RoleSet
+		{
+			get
+			{
+				return this.CreateQuery<EntityModels.Role>();
+			}
+		}
+		
+		/// <summary>
 		/// Gets a binding to the set of all <see cref="EntityModels.SystemUser"/> entities.
 		/// </summary>
 		public System.Linq.IQueryable<EntityModels.SystemUser> SystemUserSet

@@ -3118,6 +3118,78 @@ namespace EntityModels
 		}
 		
 		/// <summary>
+		/// 1:N lk_role_createdonbehalfby
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_role_createdonbehalfby")]
+		public System.Collections.Generic.IEnumerable<EntityModels.Role> lk_role_createdonbehalfby
+		{
+			get
+			{
+				return this.GetRelatedEntities<EntityModels.Role>("lk_role_createdonbehalfby", null);
+			}
+			set
+			{
+				this.OnPropertyChanging("lk_role_createdonbehalfby");
+				this.SetRelatedEntities<EntityModels.Role>("lk_role_createdonbehalfby", null, value);
+				this.OnPropertyChanged("lk_role_createdonbehalfby");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N lk_role_modifiedonbehalfby
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_role_modifiedonbehalfby")]
+		public System.Collections.Generic.IEnumerable<EntityModels.Role> lk_role_modifiedonbehalfby
+		{
+			get
+			{
+				return this.GetRelatedEntities<EntityModels.Role>("lk_role_modifiedonbehalfby", null);
+			}
+			set
+			{
+				this.OnPropertyChanging("lk_role_modifiedonbehalfby");
+				this.SetRelatedEntities<EntityModels.Role>("lk_role_modifiedonbehalfby", null, value);
+				this.OnPropertyChanged("lk_role_modifiedonbehalfby");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N lk_rolebase_createdby
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_rolebase_createdby")]
+		public System.Collections.Generic.IEnumerable<EntityModels.Role> lk_rolebase_createdby
+		{
+			get
+			{
+				return this.GetRelatedEntities<EntityModels.Role>("lk_rolebase_createdby", null);
+			}
+			set
+			{
+				this.OnPropertyChanging("lk_rolebase_createdby");
+				this.SetRelatedEntities<EntityModels.Role>("lk_rolebase_createdby", null, value);
+				this.OnPropertyChanged("lk_rolebase_createdby");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N lk_rolebase_modifiedby
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_rolebase_modifiedby")]
+		public System.Collections.Generic.IEnumerable<EntityModels.Role> lk_rolebase_modifiedby
+		{
+			get
+			{
+				return this.GetRelatedEntities<EntityModels.Role>("lk_rolebase_modifiedby", null);
+			}
+			set
+			{
+				this.OnPropertyChanging("lk_rolebase_modifiedby");
+				this.SetRelatedEntities<EntityModels.Role>("lk_rolebase_modifiedby", null, value);
+				this.OnPropertyChanged("lk_rolebase_modifiedby");
+			}
+		}
+		
+		/// <summary>
 		/// 1:N lk_systemuser_createdonbehalfby
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("lk_systemuser_createdonbehalfby", Microsoft.Xrm.Sdk.EntityRole.Referenced)]
@@ -3330,6 +3402,24 @@ namespace EntityModels
 				this.OnPropertyChanging("Referenceduser_parent_user");
 				this.SetRelatedEntities<EntityModels.SystemUser>("user_parent_user", Microsoft.Xrm.Sdk.EntityRole.Referenced, value);
 				this.OnPropertyChanged("Referenceduser_parent_user");
+			}
+		}
+		
+		/// <summary>
+		/// N:N systemuserroles_association
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("systemuserroles_association")]
+		public System.Collections.Generic.IEnumerable<EntityModels.Role> systemuserroles_association
+		{
+			get
+			{
+				return this.GetRelatedEntities<EntityModels.Role>("systemuserroles_association", null);
+			}
+			set
+			{
+				this.OnPropertyChanging("systemuserroles_association");
+				this.SetRelatedEntities<EntityModels.Role>("systemuserroles_association", null, value);
+				this.OnPropertyChanged("systemuserroles_association");
 			}
 		}
 		
