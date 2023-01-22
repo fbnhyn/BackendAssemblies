@@ -1,0 +1,4 @@
+16:59:34	© 2020 Microsoft Corporation. All rights reserved
+16:59:34	
+16:59:34	Loading config from 'C:\Users\heyne\source\repos\BackendAssemblies\packages\Microsoft.CrmSdk.CoreTools.9.1.0.79\content\bin\coretools\spkl.crmsvcutil.config'
+16:59:46	Code written to C:\Users\heyne\source\repos\BackendAssemblies\EntityModels\_ignoreMeModels.cs.
