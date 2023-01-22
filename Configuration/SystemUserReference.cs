@@ -1,9 +1,4 @@
-﻿using Microsoft.Xrm.Sdk.Deployment;
-using System;
-using System.Collections.Generic;
-using System.IdentityModel.Protocols.WSTrust;
-using System.Text;
-using System.Workflow.ComponentModel;
+﻿using System;
 
 namespace Configuration
 {
