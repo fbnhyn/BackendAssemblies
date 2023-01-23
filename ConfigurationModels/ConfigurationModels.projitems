@@ -3,12 +3,13 @@
   <PropertyGroup>
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>87ef2660-4196-404a-83ec-2f85492a4e12</SharedGUID>
+    <SharedGUID>908e30bb-70e6-4879-942a-f9327138ad09</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Configuration</Import_RootNamespace>
+    <Import_RootNamespace>ConfigurationModels</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AuftragskonfigurationReference.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SystemUserReference.cs" />
   </ItemGroup>
 </Project>

@@ -3,14 +3,16 @@
   <PropertyGroup>
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>3a77107c-ef47-4aa4-a376-79d0151fb7cd</SharedGUID>
+    <SharedGUID>78500b97-4f4e-4498-b3b4-d0782d566e44</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>BusinessServices</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Core\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Entity\Account\" />
     <Folder Include="$(MSBuildThisFileDirectory)Entity\Opportunity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Entity\Account\NamingService.cs" />
   </ItemGroup>
 </Project>

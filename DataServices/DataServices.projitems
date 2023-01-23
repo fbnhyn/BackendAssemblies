@@ -3,13 +3,16 @@
   <PropertyGroup>
     <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>6f90d9d6-5f9d-4671-8496-d00048b5759a</SharedGUID>
+    <SharedGUID>34bb89b3-381e-45f4-8a43-319420743e52</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>EntityModels</Import_RootNamespace>
+    <Import_RootNamespace>DataServices</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)\Entities\*.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)\OptionSets\*.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AccountDataService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CoreDataService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Entities\" />
   </ItemGroup>
 </Project>

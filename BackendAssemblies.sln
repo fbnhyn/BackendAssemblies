@@ -9,15 +9,34 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeActivityAssembly", "Cod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tooling", "Tooling\Tooling.csproj", "{42BD3816-8C1B-4EDA-AA73-4FE9C79675D3}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EntityModels", "EntityModels\EntityModels.shproj", "{CA7E7CC7-812E-4A66-87DF-AB748130D6BD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solution Items", "{2EC66D6E-4F32-489E-AB34-333D0225AB9D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BusinessServices", "BusinessServices\BusinessServices.shproj", "{3A77107C-EF47-4AA4-A376-79D0151FB7CD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{758CBA7A-3E8C-4C76-AA1A-88C68E1B13AB}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DataAccessServices", "DataAccessServices\DataAccessServices.shproj", "{4FEF5F90-34EE-4624-9752-9ED9BEAB7DE7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{57FCD0A1-EAB5-46EB-82D7-2109E653A802}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Configuration", "Configuration\Configuration.shproj", "{87EF2660-4196-404A-83EC-2F85492A4E12}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2933824C-8C5D-4E0B-A829-270D62294407}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendAssemblyTest", "BackendAssemblyTest\BackendAssemblyTest.csproj", "{6124A188-7230-4DF5-A241-4962F72E9D05}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BusinessServices", "BusinessServices\BusinessServices.shproj", "{78500B97-4F4E-4498-B3B4-D0782D566E44}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DataServices", "DataServices\DataServices.shproj", "{34BB89B3-381E-45F4-8A43-319420743E52}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ApiModels", "ApiModels\ApiModels.shproj", "{096BD5D5-01F2-4DFF-A7DC-71177FC98AF0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ConfigurationModels", "ConfigurationModels\ConfigurationModels.shproj", "{908E30BB-70E6-4879-942A-F9327138AD09}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EntityModels", "EntityModels\EntityModels.shproj", "{6F90D9D6-5F9D-4671-8496-D00048B5759A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{15B80507-34F8-47C9-89D7-47ED82EB7B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeActivityAssemblyTests", "CodeActivityAssemblyTests\CodeActivityAssemblyTests.csproj", "{D81D6D50-A4C8-4862-907E-A4410ED08E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginAssemblyTests", "PluginAssemblyTests\PluginAssemblyTests.csproj", "{1E5DC021-BA4A-4195-A1A6-FC846B13C507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessServicesTests", "BusinessServicesTests\BusinessServicesTests.csproj", "{E8DF8C43-89F5-46D3-BF76-B595C676F9D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,29 +56,57 @@ Global
 		{42BD3816-8C1B-4EDA-AA73-4FE9C79675D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42BD3816-8C1B-4EDA-AA73-4FE9C79675D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42BD3816-8C1B-4EDA-AA73-4FE9C79675D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6124A188-7230-4DF5-A241-4962F72E9D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6124A188-7230-4DF5-A241-4962F72E9D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6124A188-7230-4DF5-A241-4962F72E9D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6124A188-7230-4DF5-A241-4962F72E9D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81D6D50-A4C8-4862-907E-A4410ED08E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81D6D50-A4C8-4862-907E-A4410ED08E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81D6D50-A4C8-4862-907E-A4410ED08E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81D6D50-A4C8-4862-907E-A4410ED08E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5DC021-BA4A-4195-A1A6-FC846B13C507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5DC021-BA4A-4195-A1A6-FC846B13C507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5DC021-BA4A-4195-A1A6-FC846B13C507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5DC021-BA4A-4195-A1A6-FC846B13C507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8DF8C43-89F5-46D3-BF76-B595C676F9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8DF8C43-89F5-46D3-BF76-B595C676F9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8DF8C43-89F5-46D3-BF76-B595C676F9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8DF8C43-89F5-46D3-BF76-B595C676F9D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42B0E03D-1C0E-4D4E-9FA4-1403768F25AE} = {15B80507-34F8-47C9-89D7-47ED82EB7B55}
+		{C4BA45F8-0619-400F-BCF2-34BDC37A8704} = {15B80507-34F8-47C9-89D7-47ED82EB7B55}
+		{78500B97-4F4E-4498-B3B4-D0782D566E44} = {2933824C-8C5D-4E0B-A829-270D62294407}
+		{34BB89B3-381E-45F4-8A43-319420743E52} = {2933824C-8C5D-4E0B-A829-270D62294407}
+		{096BD5D5-01F2-4DFF-A7DC-71177FC98AF0} = {57FCD0A1-EAB5-46EB-82D7-2109E653A802}
+		{908E30BB-70E6-4879-942A-F9327138AD09} = {57FCD0A1-EAB5-46EB-82D7-2109E653A802}
+		{6F90D9D6-5F9D-4671-8496-D00048B5759A} = {57FCD0A1-EAB5-46EB-82D7-2109E653A802}
+		{D81D6D50-A4C8-4862-907E-A4410ED08E0E} = {758CBA7A-3E8C-4C76-AA1A-88C68E1B13AB}
+		{1E5DC021-BA4A-4195-A1A6-FC846B13C507} = {758CBA7A-3E8C-4C76-AA1A-88C68E1B13AB}
+		{E8DF8C43-89F5-46D3-BF76-B595C676F9D2} = {758CBA7A-3E8C-4C76-AA1A-88C68E1B13AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42F6682B-B27C-44E7-98C5-FB47C3FDD29B}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		BusinessServices\BusinessServices.projitems*{3a77107c-ef47-4aa4-a376-79d0151fb7cd}*SharedItemsImports = 13
+		ApiModels\ApiModels.projitems*{096bd5d5-01f2-4dff-a7dc-71177fc98af0}*SharedItemsImports = 13
+		DataServices\DataServices.projitems*{34bb89b3-381e-45f4-8a43-319420743e52}*SharedItemsImports = 13
+		ApiModels\ApiModels.projitems*{42b0e03d-1c0e-4d4e-9fa4-1403768f25ae}*SharedItemsImports = 4
 		BusinessServices\BusinessServices.projitems*{42b0e03d-1c0e-4d4e-9fa4-1403768f25ae}*SharedItemsImports = 4
-		Configuration\Configuration.projitems*{42b0e03d-1c0e-4d4e-9fa4-1403768f25ae}*SharedItemsImports = 4
-		DataAccessServices\DataAccessServices.projitems*{42b0e03d-1c0e-4d4e-9fa4-1403768f25ae}*SharedItemsImports = 4
+		ConfigurationModels\ConfigurationModels.projitems*{42b0e03d-1c0e-4d4e-9fa4-1403768f25ae}*SharedItemsImports = 4
+		DataServices\DataServices.projitems*{42b0e03d-1c0e-4d4e-9fa4-1403768f25ae}*SharedItemsImports = 4
 		EntityModels\EntityModels.projitems*{42b0e03d-1c0e-4d4e-9fa4-1403768f25ae}*SharedItemsImports = 4
-		DataAccessServices\DataAccessServices.projitems*{4fef5f90-34ee-4624-9752-9ed9beab7de7}*SharedItemsImports = 13
-		BusinessServices\BusinessServices.projitems*{6124a188-7230-4df5-a241-4962f72e9d05}*SharedItemsImports = 4
-		Configuration\Configuration.projitems*{6124a188-7230-4df5-a241-4962f72e9d05}*SharedItemsImports = 4
-		DataAccessServices\DataAccessServices.projitems*{6124a188-7230-4df5-a241-4962f72e9d05}*SharedItemsImports = 4
-		EntityModels\EntityModels.projitems*{6124a188-7230-4df5-a241-4962f72e9d05}*SharedItemsImports = 4
-		Configuration\Configuration.projitems*{87ef2660-4196-404a-83ec-2f85492a4e12}*SharedItemsImports = 13
-		EntityModels\EntityModels.projitems*{ca7e7cc7-812e-4a66-87df-ab748130d6bd}*SharedItemsImports = 13
+		EntityModels\EntityModels.projitems*{6f90d9d6-5f9d-4671-8496-d00048b5759a}*SharedItemsImports = 13
+		BusinessServices\BusinessServices.projitems*{78500b97-4f4e-4498-b3b4-d0782d566e44}*SharedItemsImports = 13
+		ConfigurationModels\ConfigurationModels.projitems*{908e30bb-70e6-4879-942a-f9327138ad09}*SharedItemsImports = 13
+		ApiModels\ApiModels.projitems*{c4ba45f8-0619-400f-bcf2-34bdc37a8704}*SharedItemsImports = 4
+		BusinessServices\BusinessServices.projitems*{c4ba45f8-0619-400f-bcf2-34bdc37a8704}*SharedItemsImports = 4
+		ConfigurationModels\ConfigurationModels.projitems*{c4ba45f8-0619-400f-bcf2-34bdc37a8704}*SharedItemsImports = 4
+		DataServices\DataServices.projitems*{c4ba45f8-0619-400f-bcf2-34bdc37a8704}*SharedItemsImports = 4
+		EntityModels\EntityModels.projitems*{c4ba45f8-0619-400f-bcf2-34bdc37a8704}*SharedItemsImports = 4
+		ApiModels\ApiModels.projitems*{e8df8c43-89f5-46d3-bf76-b595c676f9d2}*SharedItemsImports = 4
+		BusinessServices\BusinessServices.projitems*{e8df8c43-89f5-46d3-bf76-b595c676f9d2}*SharedItemsImports = 4
+		ConfigurationModels\ConfigurationModels.projitems*{e8df8c43-89f5-46d3-bf76-b595c676f9d2}*SharedItemsImports = 4
+		DataServices\DataServices.projitems*{e8df8c43-89f5-46d3-bf76-b595c676f9d2}*SharedItemsImports = 4
+		EntityModels\EntityModels.projitems*{e8df8c43-89f5-46d3-bf76-b595c676f9d2}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal
