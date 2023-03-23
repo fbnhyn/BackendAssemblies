@@ -34,8 +34,7 @@ namespace DataServices
         }
 
         public void Delete(T entity) {
-            _organizationServiceContext.DeleteObject(entity);
-            _organizationServiceContext.SaveChanges();
+            _organizationService.Delete(entity.LogicalName, entity.Id);
         }
         
     }
