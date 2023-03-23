@@ -9,7 +9,7 @@
     <Import_RootNamespace>ConfigurationModels</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AuftragskonfigurationReference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntityConfigurationRecordReferences.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SystemUserReference.cs" />
   </ItemGroup>
 </Project>
